@@ -1,8 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Forensic evidence files (do NOT commit these)
+*.E01
+*.mem
+*.dd
+*.raw
+*.vmdk
+*.plaso
+
+# Tool output / tmp
+/tmp/
+*.log
+/docs/accuracy_report.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (leftover)
 node_modules/
 build/
 dist/
 coverage/
-.DS_Store
-*.log
-.env*
-!.env.example

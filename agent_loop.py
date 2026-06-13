@@ -1,4 +1,3 @@
-import asyncio
 """
 agent_loop.py — Find Evil Hackathon
 Self-correcting triage agent built on LangGraph.
@@ -6,12 +5,14 @@ Calls SIFT MCP tools in smart sequence, cross-checks consistency,
 re-runs with adjusted parameters on contradiction, stops at max iterations.
 
 Usage:
-    python agent_loop.py \
-        --image /cases/win10_malware.E01 \
-        --output /tmp/your_findings.json \
-        --max-iterations 25 \
+    python agent_loop.py \\
+        --image /cases/win10_malware.E01 \\
+        --output /tmp/your_findings.json \\
+        --max-iterations 25 \\
         --memory-dump /cases/win10.mem   # optional
 """
+
+import asyncio
 
 import argparse
 import sys
@@ -733,6 +734,7 @@ async def main():
             write_output(final_state, args.output)
 
 
+
 if __name__ == "__main__":
-    import asyncio
     asyncio.run(main())
+

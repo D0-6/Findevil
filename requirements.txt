@@ -26,7 +26,7 @@ pefile>=2023.2.7            # PE header analysis
 # log2timeline/plaso installed via SIFT workstation
 
 # ── Browser forensics ─────────────────────────────────────────────────────────
-pyhindsight>=20231001       # browser artifact parsing
+# pyhindsight>=20231001     # browser artifact parsing (requires hexdump; install manually on SIFT: pip install pyhindsight)
 
 # ── Network/PCAP ─────────────────────────────────────────────────────────────
 pyshark>=0.6                # pcap parsing (requires tshark)
